@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Autor: Wagner Bizarro!-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Monitor Operator PBX</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/lib/jQuery3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="json/QueuesAdylnet.json"></script>
+    <script type="text/javascript" src="json/PeersAdylnet.json"></script>
+   <!-- <script type="text/javascript" src="js/refresh.js"></script> --!>
+   <!-- <script type="text/javascript" src="js/event.js"></script> --!>
+</head>
+
+<body>
+    <div id="menu">
+        <button id="button1"><a href="../panel/" target="_blank">Painel</a></button>
+        <button id="button2"><a href="http://pbx.adyl.net.br/agenda/" target="_blank">Agenda</a></button>
+    </div>
+    <hr>
+    <header>
+        <input id="search" type="text" placeholder="Pesquisar.."><br>
+        <p class='titulo'>Monitor Operator Adylnet</p>
+        <p class='titulo'>10355 / 08006458900 / 5421218900</p>
+        <hr>
+    </header>
+    <div id="main">
+	
+	<div id="PlusMinusFilas">
+	<img id="img1" class="PlusMinus" src="images/minus.png" imgnumber="1" />
+	</div>
+
+	<p class='titulo'>Filas</p>
+        <div id="queues">
+	<script type="text/javascript" src="js/QueuesAdylnet.js"></script>	
+	</div>
+	<hr>
+	
+	<div id="PlusMinusRamais">
+	<img id="img2" class="PlusMinus" src="images/minus.png" imgnumber="1" /> 
+	</div>
+
+	<p class="titulo">Ramais</p>
+        <div id="peers">
+	<script type="text/javascript" src="js/PeersAdylnet.js"></script>
+        </div>
+
+    </div>
+    <hr>
+    <footer>
+     <p>Copyright© 2021 Adylnet Telecom 1.0</p>
+    </footer>
+</body>
+
+</html>

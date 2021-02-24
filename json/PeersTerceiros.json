@@ -1,0 +1,66 @@
+var PeersTerceiros =[
+{"Peer":"7103",
+"Name":"ABO I",
+"Group":"Gramado",
+"DND":"0",
+"Status":"Disponivel"
+},  
+
+{"Peer":"7104",
+"Name":"ABO II",
+"Group":"Gramado",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7105",
+"Name":"GTEK",
+"Group":"Gramado",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7106",
+"Name":"Sultech",
+"Group":"Passo Fundo",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7107",
+"Name":"Via Byte",
+"Group":"Antonio Prado",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7109",
+"Name":"Newtec",
+"Group":"Veranopolis",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7110",
+"Name":"Ricardo",
+"Group":"Seguros",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7300",
+"Name":"Claus",
+"Group":"Voope",
+"DND":"0",
+"Status":"Disponivel"
+},
+
+{"Peer":"7301",
+"Name":"Paulo J",
+"Group":"Voope",
+"DND":"0",
+"Status":"Disponivel"
+}
+
+
+]

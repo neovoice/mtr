@@ -1,0 +1,22 @@
+var QueuesGiga =[
+{"Queue":"Giga.N1",
+"Num":"80",
+"Count": "0"
+},
+
+{"Queue":"Giga.N2",
+"Num":"85",
+"Count":"00"
+},
+
+{"Queue":"Giga.Financeiro",
+"Num":"87",
+"Count":"0"
+},
+
+{"Queue":"Giga.Compras",
+"Num":"88",
+"Count":"0"
+}
+
+]

@@ -1,0 +1,170 @@
+/*Autor: Wagner Bizarro*/
+/*============= RESET ===========*/
+body, ul, li, p {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: "Times New Roman", Times, serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*========== ESTILIZANDO ==========*/
+p {
+	text-align: center;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+
+.titulo {
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+header {
+	margin-bottom: 1px;
+	margin-top: 4px;
+}
+
+header p, div#titulo {
+	font-size: 16px;
+}
+
+div#menu {
+	 margin-top: 2px;
+	 margin-left: 2px;
+	 margin-right: 2px;
+	 position: static;
+}
+
+.botoes {
+	float: right;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+body {
+	background-color: #B0C4DE;
+}
+
+footer {
+	margin-bottom: 5px;
+}
+
+footer p { 
+	font-size: 15px;
+
+}
+
+button {
+	color: white;
+	background-color: #696969; 	
+	font-weight: 600;
+}
+
+button:hover {
+ 	background-color: #000000;
+}
+
+input#search {
+	float: right;
+	margin-right: 2px;
+	font-size: 12px;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: #000000;
+	width: 5%;
+}
+
+div#queues {
+	width: 85%;
+	margin: auto auto 4px auto;
+	word-wrap: break-word;
+}
+
+div#peers {
+	width: 85%;
+	margin: auto auto 4px auto;
+	word-wrap: break-word;
+
+}
+
+.Filas {
+	font-size: 15px;
+	display: inline-block;
+	width: 13%;
+	border: 1px solid black;
+	margin-bottom: 2px;
+	border-radius: 8px;
+	background-color: #E0FFFF;
+	text-align: center;
+}
+
+.Ramais {
+	font-size: 15px;
+	display: inline-block;
+	width: 13%;
+	border: 1px solid black;
+	margin-bottom: 2px;
+	border-radius: 8px;
+	background-color: #cfc;
+	text-align: center;
+}
+
+div#PlusMinus {
+	position: relative;
+}
+
+.PlusMinus {
+	position: absolute;
+	right: 16px;
+}
+
+.setor {
+	color: #696969;
+	font-weight: 500;
+}
+
+/*========Elementos dinamicos============*/
+/*===RAMAIS===*/
+.azul {
+	color: #104E8B;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;  	
+}
+
+.vermelho {                                                                                                                                                 color: #8B2323;                                                                                                                                     font-size: 14px;                                                                                                                                    font-weight: 600;                                                                                                                                   font-style: normal;                                                                                                                                                                                                                                                                             } 
+
+.offline {
+	color: #696969;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.dndOn {
+	color: #8B668B;
+	font-size: 11px;
+	font-weight: 600;
+	font-style: normal;
+
+}
+
+.dndOff {
+	  display: none;
+
+	}
+
+/*====FILAS===*/
+.ligacao, .semligacao  {
+	color: #696969;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+}
+
