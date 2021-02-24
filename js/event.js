@@ -11,7 +11,7 @@ if(typeof(EventSource) !== "undefined") {
 			exten = jdata["Exten"];
 			peer = peer.replace(/(\r\n|\n|\r)/gm, "");
 			exten = exten.replace(/(\r\n|\n|\r)/gm, "");
-			if ( peer !== exten){
+			if ( peer != exten){
 			sleep(2000).then(() => {
 				peerdial(peer,exten)});
 			}	
@@ -46,7 +46,8 @@ if(typeof(EventSource) !== "undefined") {
 			stats = jdata["StatusText"];
 			peer = peer.replace(/(\r\n|\n|\r)/gm, "");
 			peer = peer.replace(/\D/g,'');
-			stats = stats.replace(/(\r\n|\n|\r)/gm, "");	
+			stats = stats.replace(/(\r\n|\n|\r)/gm, "");
+			//console.log(jdata["Event"]+" "+peer+" "+stats);
 			peerstatus(peer,stats);
 		}	
 
@@ -107,10 +108,14 @@ var dnd = peer+'dnd';
 			break;
 
 		default:
+			if (peer != exten) {
 			console.log('PEERDIAL:Default '+peer+': '+exten);
 			$('#'+peer).text('em ligacao');
 			$('#'+peer).removeClass('offline');
-			$('#'+peer).removeClass('azul').addClass('vermelho');	
+			$('#'+peer).removeClass('azul').addClass('vermelho');
+			break;
+			} else	
+			console.log('PEERDIAL2:Default '+peer+': '+exten);
 			break;
 }
 }

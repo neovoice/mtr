@@ -1,20 +1,20 @@
 var QueuesGiga =[
-{"Queue":"Giga.N1",
+{"Queue":"GigaN1",
 "Num":"80",
 "Count": "0"
 },
 
-{"Queue":"Giga.N2",
+{"Queue":"GigaN2",
 "Num":"85",
 "Count":"00"
 },
 
-{"Queue":"Giga.Financeiro",
+{"Queue":"GigaFinanceiro",
 "Num":"87",
 "Count":"0"
 },
 
-{"Queue":"Giga.Compras",
+{"Queue":"GigaCompras",
 "Num":"88",
 "Count":"0"
 }
