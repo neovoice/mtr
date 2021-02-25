@@ -168,3 +168,6 @@ div#PlusMinus {
 	font-style: normal;
 }
 
+.notinfo {
+	display: none;
+}

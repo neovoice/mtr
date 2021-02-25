@@ -90,6 +90,13 @@ var PeersAdylnet =[
 "Status":"Disponivel"
 },
 
+{"Peer":"1020",
+"Name":"Gabriel",
+"Group":"N1",
+"DND":"0",
+"Status":"Disponivel"
+},
+
 {"Peer":"1023",
 "Name":"Vinicius M",
 "Group":"N1",

@@ -4,7 +4,7 @@ var QueuesAdylnet =[
 "Count":"0"
 },
 
-{"Queue":"N1.Callback",
+{"Queue":"N1Callback",
 "Num":"11",
 "Count":"0"
 },
@@ -44,7 +44,7 @@ var QueuesAdylnet =[
 "Count":"0"
 },
 
-{"Queue":"Com.Comercial",
+{"Queue":"ComComercial",
 "Num":"56",
 "Count":"0"
 },   
@@ -74,7 +74,7 @@ var QueuesAdylnet =[
 "Count":"0"
 },
 
-{"Queue":"Gramado.Almox",
+{"Queue":"GramadoAlmox",
 "Num":"74",
 "Count":"0"
 },
@@ -84,7 +84,7 @@ var QueuesAdylnet =[
 "Count":"0"
 },
 
-{"Queue":"Bento.Almox",
+{"Queue":"BentoAlmox",
 "Num":"76",        
 "Count":"0"
 },
