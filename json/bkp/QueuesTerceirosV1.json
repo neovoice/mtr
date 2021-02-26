@@ -1,0 +1,22 @@
+var QueuesTerceiros =[
+{"Queue":"Gramado",
+"Num":"71",
+"Count":"0"
+},
+
+{"Queue":"Seguros",
+"Num":"72", 
+"Count":"0"
+},
+
+{"Queue":"Voope",
+"Num":"73",
+"Count":"0"
+},
+
+{"Queue":"Veranopolis",
+"Num":"77",
+"Count":"0"
+}
+
+]

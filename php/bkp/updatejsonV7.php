@@ -26,6 +26,7 @@ switch ($evt) {
 
 function peerupdate($file_peers,$name,$stats) {
 $peers = file_get_contents($file_peers);
+	$peers = iconv('UTF-8', 'UTF-8//IGNORE', utf8_encode($peers));
 	$data = json_decode($peers, true);
 	foreach ($data as $key => $entry) {
 		if($entry['Queue'] == $name ) {
@@ -38,6 +39,7 @@ $peers = file_get_contents($file_peers);
 
 function queueupdate($file_queues,$name,$count) {
 $queues = file_get_contents($file_queues);
+	$queues = iconv('UTF-8', 'UTF-8//IGNORE', utf8_encode($queues));
 	$data = json_decode($queues, true);
 	foreach ($data as $key => $entry) {
 		if($entry['Queue'] == $name ) {
