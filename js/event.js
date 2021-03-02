@@ -104,7 +104,7 @@ if(typeof(EventSource) !== "undefined") {
   }
 } 
 else {
-	//console.log("error: PHP send event to JS");
+	console.log("error: PHP Event send event to JS");
 }
 
 //FUNCTIONS
@@ -223,7 +223,8 @@ function updateJSON(evt,name,stats) {
 		console.log("Request failed: " + textStatus);
 
 	}).always(function() {
-		console.log("Update JSON");
+		//console.log("Evento: "+evt+" name: "+name+" stats: "+stats);
+		//console.log("Update JSON");
 	});   
 
 }
