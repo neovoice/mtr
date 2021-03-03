@@ -9,7 +9,8 @@ $queuestatus = file_get_contents('../json/QueuesStatus.json');
 $dtpeers = json_decode($peerstatus, true);
 $dtqueues = json_decode($queuestatus, true);
 
-//print_r($strq);
+//print_r($dataqueues);
+
 if (is_array($dtpeers)) {
 	foreach ($dtpeers as $key => $etr) {
 		$peername = $dtpeers[$key]['Peer'];
@@ -43,5 +44,4 @@ if (is_array($dtqueues)) {
 	
 	}
 }
-
 ?>

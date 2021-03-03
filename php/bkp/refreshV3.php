@@ -6,10 +6,24 @@ header('Cache-Control: no-cache');
 $peerstatus = file_get_contents('../json/PeersStatus.json');
 $queuestatus = file_get_contents('../json/QueuesStatus.json');
 
-$dtpeers = json_decode($peerstatus, true);
-$dtqueues = json_decode($queuestatus, true);
+$strp = str_replace(']]', ']',$peerstatus);
+$strp = str_replace('[[','[',$strp);
 
+//$strp = str_replace(']]','',$peerstatus);
+//$strp = str_replace('[[','',$strp);
+//$strp = str_replace('[','',$strp);
+//$strp = str_replace(']','',$strp);
+
+$strq = str_replace(']]', ']',$queuestatus);
+$strq = str_replace('[[','[',$strq);
+
+$dtpeers = json_decode($strp, true);
+$dtqueues = json_decode($strq, true);
+
+print_r($dtqueues);
 //print_r($strq);
+
+/*
 if (is_array($dtpeers)) {
 	foreach ($dtpeers as $key => $etr) {
 		$peername = $dtpeers[$key]['Peer'];
@@ -43,5 +57,5 @@ if (is_array($dtqueues)) {
 	
 	}
 }
-
+*/
 ?>

@@ -4,7 +4,7 @@ if(typeof(EventSource) !== "undefined") {
 		source.onmessage = function(event){
 		var jdata = JSON.parse(event.data);//jdata Array received event.php
 
-		//INCALL,  DND 4800, DND 4800
+		//INCALL, DND 4800, DND 4800
 		if ( (jdata["Event"].includes("Newstate")) && (jdata["Channel"]).includes("SIP/") 
 			&& (jdata["Exten"] !== undefined )) {
 			peer = jdata["CallerIDNum"];

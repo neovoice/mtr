@@ -6,8 +6,12 @@ header('Cache-Control: no-cache');
 $peerstatus = file_get_contents('../json/PeersStatus.json');
 $queuestatus = file_get_contents('../json/QueuesStatus.json');
 
-$dtpeers = json_decode($peerstatus, true);
-$dtqueues = json_decode($queuestatus, true);
+$peerstr = str_replace(']}', '',$peerstatus);
+$queuestr = str_replace(']}', '',$queuestatus);
+
+
+$dtpeers = json_decode($peerstr, true);
+$dtqueues = json_decode($queuestr, true);
 
 //print_r($strq);
 if (is_array($dtpeers)) {

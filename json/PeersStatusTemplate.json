@@ -1,608 +1,606 @@
 [
 {"Peer":"1001",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1003",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1005",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1006",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1007",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1008",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1009",
-"DND":"",
-"Status":"" 
+"DND":"0",
+"Status":"Registered" 
 },
 
 {"Peer":"1010",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1011",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1015",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1018",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1019",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1020",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1023",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1024",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1025",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"1026",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2000",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2001",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2003",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"2004",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2007",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"2008",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"3000",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4000",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4001",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4003",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4500",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"4501",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5000",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5001",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5003",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"5004",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5005",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5006",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5007",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5008",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5009",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5301",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5302",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"5303",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5304",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"5500",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5501",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5502",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5503",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5504",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5505",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5506",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5507",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5508",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5509",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5510",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5511",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5512",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5555",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 }, 
 
 {"Peer":"5701",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5702",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5704",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },   
 
 {"Peer":"5800",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5801",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"5900",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },                     
 
 {"Peer":"6002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6003",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6004",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6005",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6006",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6007",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6008",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6009",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6010",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6012",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6013",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6015",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6016",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6018",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6019",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6020",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6021",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6501",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"6502",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6503",
-"DND":"", 
-"Status":"" 
+"DND":"0", 
+"Status":"Registered" 
 },
 
 {"Peer":"6504",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6505",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"6506",
-"DND":"",
-"Status":"" 
+"DND":"0",
+"Status":"Registered" 
 },
 
 {"Peer":"6508",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7000",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7001",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7002",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7003",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7100",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7400",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7500",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7600",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7700",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"800",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"801",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"802",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"803",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"806",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"854",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"871",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"873",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"874",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"883",
-"DND":"", 
-"Status":""
+"DND":"0", 
+"Status":"Registered"
 },
 
 {"Peer":"885",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"886",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"887",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7103",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },  
 
 {"Peer":"7104",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7105",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7106",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7107",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7109",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7110",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7300",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 },
 
 {"Peer":"7301",
-"DND":"",
-"Status":""
+"DND":"0",
+"Status":"Registered"
 }
-
-
 ]

@@ -138,7 +138,12 @@ div#PlusMinus {
 	font-style: normal;  	
 }
 
-.vermelho {                                                                                                                                                 color: #8B2323;                                                                                                                                     font-size: 14px;                                                                                                                                    font-weight: 600;                                                                                                                                   font-style: normal;                                                                                                                                                                                                                                                                             } 
+.vermelho { 
+	color: #8B2323;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+} 
 
 .offline {
 	color: #696969;

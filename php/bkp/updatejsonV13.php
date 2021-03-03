@@ -44,8 +44,8 @@ $peers = file_get_contents($file_peers);
 			}
 	}
     }
-	$newJsonPeers = json_encode($datapeers, JSON_PRETTY_PRINT);
-	//$newJsonPeers = json_encode($datapeers);
+	//$newJsonPeers = json_encode($datapeers, JSON_PRETTY_PRINT);
+	$newJsonPeers = json_encode($datapeers);
 	file_put_contents($file_peers, $newJsonPeers); 
  }
 }
@@ -59,8 +59,8 @@ $queues = file_get_contents($file_queues);
 			$dataqueues[$key]['Count'] = $count;
 			}
 	}
-	$newJsonQueues = json_encode($dataqueues, JSON_PRETTY_PRINT);
-	//$newJsonQueues = json_encode($dataqueues);
+	//$newJsonQueues = json_encode($dataqueues, JSON_PRETTY_PRINT);
+	$newJsonQueues = json_encode($dataqueues);
 	file_put_contents($file_queues, $newJsonQueues);
    }
 }

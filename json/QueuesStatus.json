@@ -1,110 +1,106 @@
 [
-{"Queue":"N1",
-"Count":""
-},
-
-{"Queue":"N1Callback",
-"Count":""
-},
-
-{"Queue":"N2",
-"Count":""
-},
-
-{"Queue":"CGR",
-"Count":""
-},       
-
-{"Queue":"Telefonia",
-"Count":""
-},
-
-{"Queue":"Regulatorio",
-"Count":""
-},
-
-{"Queue":"Financeiro",
-"Count":""
-},    
-
-{"Queue":"Almoxarifado",
-"Count":""
-},
-
-{"Queue":"Comercial",
-"Count":""
-},
-
-{"Queue":"ComComercial",
-"Count":""
-},   
-
-{"Queue":"Agendamento",
-"Count":""
-},   
-
-{"Queue":"Assistencia",
-"Count":""
-},
-
-{"Queue":"Vendas ",
-"Count":""
-},
-
-{"Queue":"Diretoria",
-"Count":""
-},
-
-{"Queue":"Gramado",
-"Count":""
-},
-
-{"Queue":"GramadoAlmox",
-"Count":""
-},
-
-{"Queue":"Bento",
-"Count":""
-},
-
-{"Queue":"BentoAlmox",
-"Count":""
-},
-
-{"Queue":"Veranopolis",
-"Count":""
-},
-
-{"Queue":"GigaN1",
-"Count": ""
-},
-
-{"Queue":"GigaN2",
-"Count":""
-},
-
-{"Queue":"GigaFinanceiro",
-"Count":""
-},
-
-{"Queue":"GigaCompras",
-"Count":""
-},
-
-{"Queue":"Gramado",
-"Count":""
-},
-
-{"Queue":"Seguros",
-"Count":""
-},
-
-{"Queue":"Voope",
-"Count":""
-},
-
-{"Queue":"Veranopolis",
-"Count":""
-}
-
+    {
+        "Queue": "N1",
+        "Count": "0"
+    },
+    {
+        "Queue": "N1Callback",
+        "Count": "0"
+    },
+    {
+        "Queue": "N2",
+        "Count": "0"
+    },
+    {
+        "Queue": "CGR",
+        "Count": "0"
+    },
+    {
+        "Queue": "Telefonia",
+        "Count": "0"
+    },
+    {
+        "Queue": "Regulatorio",
+        "Count": "0"
+    },
+    {
+        "Queue": "Financeiro",
+        "Count": "0"
+    },
+    {
+        "Queue": "Almoxarifado",
+        "Count": "0"
+    },
+    {
+        "Queue": "Comercial",
+        "Count": "0"
+    },
+    {
+        "Queue": "ComComercial",
+        "Count": "0"
+    },
+    {
+        "Queue": "Agendamento",
+        "Count": "0"
+    },
+    {
+        "Queue": "Assistencia",
+        "Count": "0"
+    },
+    {
+        "Queue": "Vendas ",
+        "Count": "0"
+    },
+    {
+        "Queue": "Diretoria",
+        "Count": "0"
+    },
+    {
+        "Queue": "Gramado",
+        "Count": "0"
+    },
+    {
+        "Queue": "GramadoAlmox",
+        "Count": "0"
+    },
+    {
+        "Queue": "Bento",
+        "Count": "0"
+    },
+    {
+        "Queue": "BentoAlmox",
+        "Count": "0"
+    },
+    {
+        "Queue": "Veranopolis",
+        "Count": "0"
+    },
+    {
+        "Queue": "GigaN1",
+        "Count": "0"
+    },
+    {
+        "Queue": "GigaN2",
+        "Count": "0"
+    },
+    {
+        "Queue": "GigaFinanceiro",
+        "Count": "0"
+    },
+    {
+        "Queue": "GigaCompras",
+        "Count": "0"
+    },
+    {
+        "Queue": "Gramado",
+        "Count": "0"
+    },
+    {
+        "Queue": "Seguros",
+        "Count": "0"
+    },
+    {
+        "Queue": "Voope",
+        "Count": "0"
+    }
 ]

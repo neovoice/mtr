@@ -1,110 +1,105 @@
 [
 {"Queue":"N1",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"N1Callback",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"N2",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"CGR",
-"Count":""
+"Count":"0"
 },       
 
 {"Queue":"Telefonia",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Regulatorio",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Financeiro",
-"Count":""
+"Count":"0"
 },    
 
 {"Queue":"Almoxarifado",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Comercial",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"ComComercial",
-"Count":""
+"Count":"0"
 },   
 
 {"Queue":"Agendamento",
-"Count":""
+"Count":"0"
 },   
 
 {"Queue":"Assistencia",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Vendas ",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Diretoria",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Gramado",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"GramadoAlmox",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Bento",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"BentoAlmox",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Veranopolis",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"GigaN1",
-"Count": ""
+"Count": "0"
 },
 
 {"Queue":"GigaN2",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"GigaFinanceiro",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"GigaCompras",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Gramado",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Seguros",
-"Count":""
+"Count":"0"
 },
 
 {"Queue":"Voope",
-"Count":""
-},
-
-{"Queue":"Veranopolis",
-"Count":""
+"Count":"0"
 }
-
 ]
