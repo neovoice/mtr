@@ -4,14 +4,11 @@ $evt = $_POST['evento'];
 $name = $_POST['name'];
 $stats = $_POST['stats'];
 
-$file_peers = '/var/www/html/mtr/json/PeersStatus.json';
-$file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
+$file_peers = '../json/PeersStatus.json';
+$file_queues = '../json/QueuesStatus.json';
 
-$fqueues = file_get_contents($file_queues);
-$jsonqueues = json_decode($fqueues, true);
-
-$fpeers = file_get_contents($file_peers);
-$jsonpeers = json_decode($fpeers, true);
+$fpeers = str_replace(']}', '',$file_peers);
+$fqueues = str_replace(']}', '',$file_peers); 
 
 switch ($evt) {
 	case "Newstate":
@@ -19,20 +16,21 @@ switch ($evt) {
 	case "DeviceStateChange":
 	case "ExtensionStatus":
 	case "Hangup":
-		peerupdate($file_peers,$jsonpeers,$name,$stats);
+		peerupdate($fpeers,$name,$stats);
 		break;
 
 	case "QueueCallerJoin":
 	case "QueueCallerLeave":
-		queueupdate($file_queues,$jsonqueues,$name,$stats);
+		queueupdate($fqueues,$name,$stats);
 		break;
 	
 	default:
 		break;
 }
 
-
-function peerupdate($file_peers,$datapeers,$name,$stats) {
+function peerupdate($fpeers,$name,$stats) {
+$peers = file_get_contents($fpeers);
+	$datapeers = json_decode($peers, true);
 	if (is_array($datapeers)) {
 	foreach ($datapeers as $key => $entry) {
 		if($entry['Peer'] == $name ) {
@@ -50,21 +48,23 @@ function peerupdate($file_peers,$datapeers,$name,$stats) {
 	}
     }
 	$newJsonPeers = json_encode($datapeers, JSON_PRETTY_PRINT);
-	file_get_contents($file_peers);
-	file_put_contents($file_peers, $newJsonPeers); 
+	//$newJsonPeers = json_encode($datapeers);
+	file_put_contents($fpeers, $newJsonPeers); 
  }
 }
 
-function queueupdate($file_queues,$dataqueues,$name,$count) {
-	if (is_array($dataqueues)) {
+function queueupdate($fqueues,$name,$count) {
+$queues = file_get_contents($fqueues);
+	$dataqueues = json_decode($queues, true);
+	 if (is_array($dataqueues)) {
 	foreach ($dataqueues as $key => $entry) {
 		if($entry['Queue'] == $name ) {
 			$dataqueues[$key]['Count'] = $count;
 			}
 	}
 	$newJsonQueues = json_encode($dataqueues, JSON_PRETTY_PRINT);
-	file_get_contents($file_queues);
-	file_put_contents($file_queues, $newJsonQueues);
+	//$newJsonQueues = json_encode($dataqueues);
+	file_put_contents($fqueues, $newJsonQueues);
    }
 }
 

@@ -4,14 +4,25 @@ $evt = $_POST['evento'];
 $name = $_POST['name'];
 $stats = $_POST['stats'];
 
-$file_peers = '/var/www/html/mtr/json/PeersStatus.json';
-$file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
+//$evt = "Newstate";
+//$name = "1001";
+//$stats = "RINGING";
 
-$fqueues = file_get_contents($file_queues);
+$file_peers = '../json/PeersStatus.json';
+$file_queues = '../json/QueuesStatus.json';
+$file_peers_ref = '../json/PeersStatusRef.json';
+$file_queues_ref = '../json/QueuesStatusRef.json';
+
+$filepeers = file_get_contents($file_peers);
+$filequeues = file_get_contents($file_queues);
+
+$fpeers = strtok($filepeers, '%');
+$fqueues = strtok($filequeues, '%');
+
+$jsonpeers = json_decode($fpeers, true);
 $jsonqueues = json_decode($fqueues, true);
 
-$fpeers = file_get_contents($file_peers);
-$jsonpeers = json_decode($fpeers, true);
+//print_r($jsonqueues);
 
 switch ($evt) {
 	case "Newstate":
@@ -19,20 +30,19 @@ switch ($evt) {
 	case "DeviceStateChange":
 	case "ExtensionStatus":
 	case "Hangup":
-		peerupdate($file_peers,$jsonpeers,$name,$stats);
+		peerupdate($file_peers_ref,$jsonpeers,$name,$stats);
 		break;
 
 	case "QueueCallerJoin":
 	case "QueueCallerLeave":
-		queueupdate($file_queues,$jsonqueues,$name,$stats);
+		queueupdate($file_queues_ref,$jsonqueues,$name,$stats);
 		break;
 	
 	default:
 		break;
 }
 
-
-function peerupdate($file_peers,$datapeers,$name,$stats) {
+function peerupdate($file_peers_ref,$datapeers,$name,$stats) {
 	if (is_array($datapeers)) {
 	foreach ($datapeers as $key => $entry) {
 		if($entry['Peer'] == $name ) {
@@ -50,12 +60,12 @@ function peerupdate($file_peers,$datapeers,$name,$stats) {
 	}
     }
 	$newJsonPeers = json_encode($datapeers, JSON_PRETTY_PRINT);
-	file_get_contents($file_peers);
-	file_put_contents($file_peers, $newJsonPeers); 
+	file_get_contents($file_peers_ref);
+	file_put_contents($file_peers_ref, $newJsonPeers); 
  }
 }
 
-function queueupdate($file_queues,$dataqueues,$name,$count) {
+function queueupdate($file_queues_ref,$dataqueues,$name,$count) {
 	if (is_array($dataqueues)) {
 	foreach ($dataqueues as $key => $entry) {
 		if($entry['Queue'] == $name ) {
@@ -63,9 +73,8 @@ function queueupdate($file_queues,$dataqueues,$name,$count) {
 			}
 	}
 	$newJsonQueues = json_encode($dataqueues, JSON_PRETTY_PRINT);
-	file_get_contents($file_queues);
-	file_put_contents($file_queues, $newJsonQueues);
+	file_get_contents($file_queues_ref);
+	file_put_contents($file_queues_ref, $newJsonQueues);
    }
 }
-
 ?>

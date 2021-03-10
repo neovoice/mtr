@@ -4,15 +4,47 @@ $evt = $_POST['evento'];
 $name = $_POST['name'];
 $stats = $_POST['stats'];
 
+//$evt = "QueueCallerLeave";
+//$name = "Telefonia";
+//$stats = "50";
+
 $file_peers = '/var/www/html/mtr/json/PeersStatus.json';
 $file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
 
-$fqueues = file_get_contents($file_queues);
+$filepeers = file_get_contents($file_peers);
+$filequeues = file_get_contents($file_queues);
+
+//Fixed error in file JSON
+$fpeers = str_replace(']]', ']',$filepeers);
+$fpeers = str_replace(']  }', '',$filepeers);
+$fpeers = str_replace(']   }', '',$filepeers);
+$fpeers = str_replace(']    }', '',$filepeers);
+
+$fqueues = str_replace(']]', ']',$filequeues);
+$fqueues = str_replace(']    }', ']',$filequeues); 
+$fqueues = str_replace(']  }', ']',$filequeues);
+$fqueues = str_replace(']   }', ']',$filequeues);
+
+$jsonpeers = json_decode($fpeers, true);
 $jsonqueues = json_decode($fqueues, true);
 
-$fpeers = file_get_contents($file_peers);
-$jsonpeers = json_decode($fpeers, true);
+//print_r($filepeers);
+//print_r($jsonpeers);
+//print_r($jsonqueues);
 
+if (empty($jsonpeers)) {
+	 echo "JSON Peers Corrompido\n";
+	 unset($filepeers, $file_peers);
+	 shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeersStatus.json');
+
+}
+
+/*if (empty($jsonqueues)) { 
+	echo "JSON Queues Corrompido\n";
+	unset($filepeers, $file_peers);
+	shell_exec('cp /var/www/html/mtr/json/QueuesStatusTemplate.json /var/www/html/mtr/json/QueuesStatus.json');
+}
+*/
 switch ($evt) {
 	case "Newstate":
 	case "PeerStatus": 

@@ -1,18 +1,48 @@
 <?php
 //Autor: Wagner Bizarro
-$evt = $_POST['evento'];
-$name = $_POST['name'];
-$stats = $_POST['stats'];
+//$evt = $_POST['evento'];
+//$name = $_POST['name'];
+//$stats = $_POST['stats'];
 
-$file_peers = '/var/www/html/mtr/json/PeersStatus.json';
-$file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
+$evt = "Newstate";
+$name = "1002";
+$stats = "4801";
 
-$fqueues = file_get_contents($file_queues);
-$jsonqueues = json_decode($fqueues, true);
+$file_peers = '../json/PeersStatus.json';
+$file_queues = '../json/QueuesStatus.json';
 
-$fpeers = file_get_contents($file_peers);
-$jsonpeers = json_decode($fpeers, true);
+$filepeers = file_get_contents($file_peers);
+$filequeues = file_get_contents($file_queues);
 
+//Fixed error in file JSON
+$fpeers = str_replace(']]', ']',$filepeers);
+$fpeers = str_replace(']  }', '',$filepeers);
+$fpeers = str_replace(']   }', '',$filepeers);
+$fpeers = str_replace(']    }', '',$filepeers);
+//$fpeers = strtok($filepeers, "]  }");
+
+$fqueues = str_replace(']]', ']',$filequeues);
+$fqueues = str_replace(']  }', ']',$filequeues);
+$fqueues = str_replace(']   }', ']',$filequeues);
+$fqueues = str_replace(']    }', ']',$filequeues);
+
+$jsonpeers = json_decode($filepeers, true);
+$jsonqueues = json_decode($filequeues, true);
+
+//print_r($fpeers);
+print_r($jsonpeers);
+print_r($jsonqueues);
+
+if (empty($jsonpeers)) {
+	 echo "JSON Peers Corrompido\n";
+	 shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeerStatus.json');
+}
+
+if (empty($jsonqueues)) { 
+	echo "JSON Queues Corrompido\n";
+	shell_exec('cp /var/www/html/mtr/json/QueuesStatusTemplate.json /var/www/html/mtr/json/QueuesStatus.json');
+}
+/*
 switch ($evt) {
 	case "Newstate":
 	case "PeerStatus": 
@@ -67,5 +97,5 @@ function queueupdate($file_queues,$dataqueues,$name,$count) {
 	file_put_contents($file_queues, $newJsonQueues);
    }
 }
-
+*/
 ?>

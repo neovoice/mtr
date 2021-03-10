@@ -4,6 +4,10 @@ $evt = $_POST['evento'];
 $name = $_POST['name'];
 $stats = $_POST['stats'];
 
+//$evt = "QueueCallerLeave";
+//$name = "Telefonia";
+//$stats = "50";
+
 $file_peers = '/var/www/html/mtr/json/PeersStatus.json';
 $file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
 
@@ -12,6 +16,14 @@ $jsonqueues = json_decode($fqueues, true);
 
 $fpeers = file_get_contents($file_peers);
 $jsonpeers = json_decode($fpeers, true);
+
+
+if (json_last_error() === JSON_ERROR_SYNTAX) {
+	 echo "JSON Corrompido\n";
+	 //unset($filepeers, $file_peers);
+	 //shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeersStatus.json');
+
+}
 
 switch ($evt) {
 	case "Newstate":

@@ -1,17 +1,25 @@
 <?php
 //Autor: Wagner Bizarro
-$evt = $_POST['evento'];
-$name = $_POST['name'];
-$stats = $_POST['stats'];
+//$evt = $_POST['evento'];
+//$name = $_POST['name'];
+//$stats = $_POST['stats'];
 
-$file_peers = '/var/www/html/mtr/json/PeersStatus.json';
-$file_queues = '/var/www/html/mtr/json/QueuesStatus.json';
+$evt = "Newstate";
+$name = "1001";
+$stats = "TESTE";
 
-$fqueues = file_get_contents($file_queues);
-$jsonqueues = json_decode($fqueues, true);
+$file_peers = '../json/PeersStatus.json';
+$file_queues = '../json/QueuesStatus.json';
 
-$fpeers = file_get_contents($file_peers);
+$filepeers = file_get_contents('../json/PeersStatus.json');
+$filequeues = file_get_contents('../json/QueuesStatus.json');
+
+$fpeers = strtok($filepeers, 'FIM');
+
 $jsonpeers = json_decode($fpeers, true);
+$jsonqueues = json_decode($filequeues, true);
+
+//print_r($fpeers);
 
 switch ($evt) {
 	case "Newstate":
@@ -19,18 +27,19 @@ switch ($evt) {
 	case "DeviceStateChange":
 	case "ExtensionStatus":
 	case "Hangup":
+		//sleep(2);
 		peerupdate($file_peers,$jsonpeers,$name,$stats);
 		break;
 
 	case "QueueCallerJoin":
 	case "QueueCallerLeave":
+		//sleep(2);
 		queueupdate($file_queues,$jsonqueues,$name,$stats);
 		break;
 	
 	default:
 		break;
 }
-
 
 function peerupdate($file_peers,$datapeers,$name,$stats) {
 	if (is_array($datapeers)) {
@@ -63,6 +72,7 @@ function queueupdate($file_queues,$dataqueues,$name,$count) {
 			}
 	}
 	$newJsonQueues = json_encode($dataqueues, JSON_PRETTY_PRINT);
+	//$newJsonQueues = json_encode($dataqueues);
 	file_get_contents($file_queues);
 	file_put_contents($file_queues, $newJsonQueues);
    }

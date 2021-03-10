@@ -1,13 +1,13 @@
 [
     {
         "Peer": "1001",
-        "DND": 0,
-        "Status": "Idle"
+        "DND": "0",
+        "Status": "Registered"
     },
     {
         "Peer": "1002",
         "DND": "0",
-        "Status": "Idle"
+        "Status": "Registered"
     },
     {
         "Peer": "1003",
@@ -291,6 +291,11 @@
     },
     {
         "Peer": "5512",
+        "DND": "0",
+        "Status": "Registered"
+    },
+    {
+        "Peer": "5513",
         "DND": "0",
         "Status": "Registered"
     },
@@ -604,5 +609,4 @@
         "DND": "0",
         "Status": "Registered"
     }
-]   }
 ]

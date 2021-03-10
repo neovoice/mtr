@@ -3,16 +3,13 @@
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache'); 
 
-$queuestatus = file_get_contents('/var/www/html/mtr/json/QueuesStatus.json');
+$peerstatus = file_get_contents('../json/PeersStatus.json');
+$queuestatus = file_get_contents('../json/QueuesStatus.json');
+
+$dtpeers = json_decode($peerstatus, true);
 $dtqueues = json_decode($queuestatus, true);
 
-$peerstatus = file_get_contents('/var/www/html/mtr/json/PeersStatus.json');
-$dtpeers = json_decode($peerstatus, true);
-
-//Fixed Error JSON
-if (json_last_error() !== JSON_ERROR_NONE) {
-	shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeersStatus.json');
-}
+//print_r($peerstr);
 
 if (is_array($dtpeers)) {
 	foreach ($dtpeers as $key => $etr) {
