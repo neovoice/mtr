@@ -1,0 +1,61 @@
+Asterisk Call Manager/5.0.2
+
+Response: Success
+
+Message: Authentication accepted
+
+
+
+Event: FullyBooted
+
+Privilege: system,all
+
+Uptime: 22484
+
+LastReload: 22484
+
+Status: Fully Booted
+
+
+
+Event: SuccessfulAuth
+
+Privilege: security,all
+
+EventTV: 2021-03-10T11:13:11.659-0800
+
+Severity: Informational
+
+Service: AMI
+
+EventVersion: 1
+
+AccountID: monitor
+
+SessionID: 0x7ff4a80020e0
+
+LocalAddress: IPV4/TCP/0.0.0.0/5038
+
+RemoteAddress: IPV4/TCP/127.0.0.1/36580
+
+UsingPassword: 0
+
+SessionTV: 2021-03-10T11:13:11.659-0800
+
+
+
+Response: Success
+
+Message: Command output follows
+
+Output: No such queue: GigaCompras.
+
+
+
+Response: Goodbye
+
+Message: Thanks for all the fish.
+
+
+
+

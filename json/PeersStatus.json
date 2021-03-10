@@ -7,7 +7,7 @@
     {
         "Peer": "1002",
         "DND": "0",
-        "Status": "Registered"
+        "Status": "7103"
     },
     {
         "Peer": "1003",
@@ -567,7 +567,7 @@
     {
         "Peer": "7103",
         "DND": "0",
-        "Status": "Registered"
+        "Status": "NOT_INUSE"
     },
     {
         "Peer": "7104",

@@ -37,21 +37,11 @@ $(document).ready(function(){
 	});
 
 //Info
+	//$("#"+info).click(function () {
 	$(".info").click(function () {
 		var infoname = $(this).attr("id");
 		var infotype = $(this).attr("met");
-		//alert(infotype+' '+infoname);
-		
-		$.ajax({
-			url: "/mtr/php/info.php",
-			type: "POST",
-			data: "type="+infotype+"&name="+infoname,
-			dataType: "html",
-			success: function(response) {
-				alert(response);
-			}
-		
-		});
+		alert(infotype+' '+infoname);
 	}); 	
 
 });

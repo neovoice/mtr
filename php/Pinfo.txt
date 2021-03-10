@@ -1,0 +1,217 @@
+Asterisk Call Manager/5.0.2
+
+Response: Success
+
+Message: Authentication accepted
+
+
+
+Event: FullyBooted
+
+Privilege: system,all
+
+Uptime: 22482
+
+LastReload: 22482
+
+Status: Fully Booted
+
+
+
+Event: SuccessfulAuth
+
+Privilege: security,all
+
+EventTV: 2021-03-10T11:13:09.015-0800
+
+Severity: Informational
+
+Service: AMI
+
+EventVersion: 1
+
+AccountID: monitor
+
+SessionID: 0x7ff4a4000a10
+
+LocalAddress: IPV4/TCP/0.0.0.0/5038
+
+RemoteAddress: IPV4/TCP/127.0.0.1/36578
+
+UsingPassword: 0
+
+SessionTV: 2021-03-10T11:13:09.015-0800
+
+
+
+Response: Success
+
+Message: Command output follows
+
+Output: 
+
+Output: 
+
+Output:   * Name       : 887
+
+Output:   Description  : "Aprendiz II"
+
+Output:   Secret       : <Set>
+
+Output:   MD5Secret    : <Not set>
+
+Output:   Remote Secret: <Not set>
+
+Output:   Context      : Giga
+
+Output:   Record On feature : automon
+
+Output:   Record Off feature : automon
+
+Output:   Subscr.Cont. : <Not set>
+
+Output:   Language     : pt_BR
+
+Output:   Tonezone     : <Not set>
+
+Output:   AMA flags    : Unknown
+
+Output:   Transfer mode: open
+
+Output:   CallingPres  : Presentation Allowed, Not Screened
+
+Output:   Callgroup    : 18
+
+Output:   Pickupgroup  : 18
+
+Output:   Named Callgr : 
+
+Output:   Nam. Pickupgr: 
+
+Output:   MOH Suggest  : 
+
+Output:   Mailbox      : 
+
+Output:   VM Extension : asterisk
+
+Output:   LastMsgsSent : 0/0
+
+Output:   Call limit   : 1
+
+Output:   Max forwards : 0
+
+Output:   Dynamic      : Yes
+
+Output:   Callerid     : "Aprendiz II" <887>
+
+Output:   MaxCallBR    : 384 kbps
+
+Output:   Expire       : -1
+
+Output:   Insecure     : no
+
+Output:   Force rport  : Yes
+
+Output:   Symmetric RTP: Yes
+
+Output:   ACL          : Yes
+
+Output:   ContactACL   : No
+
+Output:   DirectMedACL : No
+
+Output:   T.38 support : Yes
+
+Output:   T.38 EC mode : FEC
+
+Output:   T.38 MaxDtgrm: 4294967295
+
+Output:   DirectMedia  : No
+
+Output:   PromiscRedir : No
+
+Output:   User=Phone   : No
+
+Output:   Video Support: No
+
+Output:   Text Support : No
+
+Output:   Ign SDP ver  : No
+
+Output:   Trust RPID   : No
+
+Output:   Send RPID    : No
+
+Output:   Path support : No
+
+Output:   Path         : N/A
+
+Output:   TrustIDOutbnd: Legacy
+
+Output:   Subscriptions: Yes
+
+Output:   Overlap dial : Yes
+
+Output:   DTMFmode     : rfc2833
+
+Output:   Timer T1     : 500
+
+Output:   Timer B      : 32000
+
+Output:   ToHost       : 
+
+Output:   Addr->IP     : (null)
+
+Output:   Defaddr->IP  : (null)
+
+Output:   Prim.Transp. : UDP
+
+Output:   Allowed.Trsp : UDP
+
+Output:   Def. Username: 887
+
+Output:   SIP Options  : (none)
+
+Output:   Codecs       : (alaw)
+
+Output:   Auto-Framing : No
+
+Output:   Status       : UNKNOWN
+
+Output:   Useragent    : 
+
+Output:   Reg. Contact : 
+
+Output:   Qualify Freq : 60000 ms
+
+Output:   Keepalive    : 0 ms
+
+Output:   Sess-Timers  : Accept
+
+Output:   Sess-Refresh : uas
+
+Output:   Sess-Expires : 1800 secs
+
+Output:   Min-Sess     : 90 secs
+
+Output:   RTP Engine   : asterisk
+
+Output:   Parkinglot   : 
+
+Output:   Use Reason   : No
+
+Output:   Encryption   : No
+
+Output:   RTCP Mux     : No
+
+Output: 
+
+
+
+Response: Goodbye
+
+Message: Thanks for all the fish.
+
+
+
+

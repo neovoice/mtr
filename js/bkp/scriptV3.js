@@ -46,11 +46,16 @@ $(document).ready(function(){
 			url: "/mtr/php/info.php",
 			type: "POST",
 			data: "type="+infotype+"&name="+infoname,
-			dataType: "html",
-			success: function(response) {
-				alert(response);
-			}
+			dataType: "html"
 		
+		}).done(function(resposta){
+			console.log(resposta);
+
+		}).fail(function(jqXHR) {
+			console.log("Request Failed");
+		
+		}).always(function(){
+			console.log("OKKK")
 		});
 	}); 	
 

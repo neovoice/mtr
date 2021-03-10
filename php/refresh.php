@@ -10,9 +10,9 @@ $peerstatus = file_get_contents('/var/www/html/mtr/json/PeersStatus.json');
 $dtpeers = json_decode($peerstatus, true);
 
 //Fixed Error JSON
-if (json_last_error() !== JSON_ERROR_NONE) {
-	shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeersStatus.json');
-}
+//if (json_last_error() !== JSON_ERROR_NONE) {
+//	shell_exec('cp /var/www/html/mtr/json/PeersStatusTemplate.json /var/www/html/mtr/json/PeersStatus.json');
+//}
 
 if (is_array($dtpeers)) {
 	foreach ($dtpeers as $key => $etr) {
