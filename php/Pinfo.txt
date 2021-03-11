@@ -10,9 +10,9 @@ Event: FullyBooted
 
 Privilege: system,all
 
-Uptime: 22482
+Uptime: 25359
 
-LastReload: 22482
+LastReload: 25359
 
 Status: Fully Booted
 
@@ -22,7 +22,7 @@ Event: SuccessfulAuth
 
 Privilege: security,all
 
-EventTV: 2021-03-10T11:13:09.015-0800
+EventTV: 2021-03-11T10:32:41.325-0800
 
 Severity: Informational
 
@@ -32,15 +32,15 @@ EventVersion: 1
 
 AccountID: monitor
 
-SessionID: 0x7ff4a4000a10
+SessionID: 0x7fd960002c30
 
 LocalAddress: IPV4/TCP/0.0.0.0/5038
 
-RemoteAddress: IPV4/TCP/127.0.0.1/36578
+RemoteAddress: IPV4/TCP/127.0.0.1/56324
 
 UsingPassword: 0
 
-SessionTV: 2021-03-10T11:13:09.015-0800
+SessionTV: 2021-03-11T10:32:41.325-0800
 
 
 
@@ -52,9 +52,9 @@ Output:
 
 Output: 
 
-Output:   * Name       : 887
+Output:   * Name       : 2000
 
-Output:   Description  : "Aprendiz II"
+Output:   Description  : "Felipe"
 
 Output:   Secret       : <Set>
 
@@ -62,7 +62,7 @@ Output:   MD5Secret    : <Not set>
 
 Output:   Remote Secret: <Not set>
 
-Output:   Context      : Giga
+Output:   Context      : interno
 
 Output:   Record On feature : automon
 
@@ -80,9 +80,9 @@ Output:   Transfer mode: open
 
 Output:   CallingPres  : Presentation Allowed, Not Screened
 
-Output:   Callgroup    : 18
+Output:   Callgroup    : 2
 
-Output:   Pickupgroup  : 18
+Output:   Pickupgroup  : 2
 
 Output:   Named Callgr : 
 
@@ -96,13 +96,13 @@ Output:   VM Extension : asterisk
 
 Output:   LastMsgsSent : 0/0
 
-Output:   Call limit   : 1
+Output:   Call limit   : 2
 
 Output:   Max forwards : 0
 
 Output:   Dynamic      : Yes
 
-Output:   Callerid     : "Aprendiz II" <887>
+Output:   Callerid     : "Felipe" <2000>
 
 Output:   MaxCallBR    : 384 kbps
 
@@ -112,7 +112,7 @@ Output:   Insecure     : no
 
 Output:   Force rport  : Yes
 
-Output:   Symmetric RTP: Yes
+Output:   Symmetric RTP: No
 
 Output:   ACL          : Yes
 
@@ -168,7 +168,7 @@ Output:   Prim.Transp. : UDP
 
 Output:   Allowed.Trsp : UDP
 
-Output:   Def. Username: 887
+Output:   Def. Username: 2000
 
 Output:   SIP Options  : (none)
 

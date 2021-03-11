@@ -3,6 +3,9 @@
 $type = $_POST['type'];
 $name = $_POST['name'];
 
+//$name = "1001";
+//$type = "peer";
+
 //Info Queues
 if ($type == "queue") { 
 	$socket = fsockopen("127.0.0.1","5038", $errno, $errstr, 10); 
@@ -27,28 +30,17 @@ if ($type == "queue") {
  	fclose($socket);
 	
 	$Qfile = file_get_contents('/var/www/html/mtr/php/Qinfo.txt');
-	$text1 = "Output:    No Callers";
-	$text2 = "Output:    Callers:"; 
-	$text3 = "Event: SuccessfulAuth";
-	$text4 = "Response: Goodbye"; 
+	$Qfile = strstr($Qfile, 'Output:    Members:');
+	$text1 = "Event: SuccessfulAuth";
+	$text2 = "Response: Goodbye";
 
-	//With Callers	
 	if (strpos($Qfile, $text1) !== false){
-		$Qfile = strstr($Qfile,$text1);
-		 if (strpos($Qfile, $text3) !== false) {
-		 	$Qfile = strstr($Qfile,$text3, true);					
-		 } else { $Qfile = strstr($Qfile,$text4, true); }
-		
+		$Qfile = strstr($Qfile,$text1, true);
+	}
+ 	else{
+		$Qfile = strstr($Qfile,$text2, true);
 	}
 
-	//Without Callers	
- 	else {
-		$Qfile = strstr($Qfile,$text2);
-		if (strpos($Qfile, $text3) !== false) {
-			$Qfile = strstr($Qfile,$text3, true);
-		} else { $Qfile = strstr($Qfile,$text4, true); }	
-	}
-	
 	print_r($Qfile);
 }
 
@@ -74,16 +66,9 @@ if ($type == "peer") {
 	}
 	fclose($file);
 	fclose($socket);
-	
-	$text3 = "Status";
+
 	$Pfile = file("/var/www/html/mtr/php/Pinfo.txt");
-	$Pstatus = $Pfile[178];
-	if (strpos($Pstatus,$text3) !== false){	
-		$Pstatus = str_replace('Output:   Status       :', '', $Pstatus);
-		print_r($Pstatus);
-	
-	}
-	else{ echo "Tente Novamente!"; }
+	print_r($Pfile[178]);
 }
 
 ?>

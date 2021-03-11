@@ -3,6 +3,9 @@
 $type = $_POST['type'];
 $name = $_POST['name'];
 
+//$name = "1001";
+//$type = "peer";
+
 //Info Queues
 if ($type == "queue") { 
 	$socket = fsockopen("127.0.0.1","5038", $errno, $errstr, 10); 
@@ -27,12 +30,14 @@ if ($type == "queue") {
  	fclose($socket);
 	
 	$Qfile = file_get_contents('/var/www/html/mtr/php/Qinfo.txt');
+	//$Qfile = strstr($Qfile, 'Output:    Members:');
+	//$text3 = "Event: SuccessfulAuth";
+	//$text4 = "Response: Goodbye";
 	$text1 = "Output:    No Callers";
 	$text2 = "Output:    Callers:"; 
 	$text3 = "Event: SuccessfulAuth";
 	$text4 = "Response: Goodbye"; 
-
-	//With Callers	
+	
 	if (strpos($Qfile, $text1) !== false){
 		$Qfile = strstr($Qfile,$text1);
 		 if (strpos($Qfile, $text3) !== false) {
@@ -40,8 +45,7 @@ if ($type == "queue") {
 		 } else { $Qfile = strstr($Qfile,$text4, true); }
 		
 	}
-
-	//Without Callers	
+	
  	else {
 		$Qfile = strstr($Qfile,$text2);
 		if (strpos($Qfile, $text3) !== false) {
@@ -49,6 +53,8 @@ if ($type == "queue") {
 		} else { $Qfile = strstr($Qfile,$text4, true); }	
 	}
 	
+	//$Qfile = str_replace('Output:    Members:', '', $Qfile);		
+	//i$Qfile = str_replace('Output:       ', '', $Qfile);
 	print_r($Qfile);
 }
 
@@ -83,7 +89,6 @@ if ($type == "peer") {
 		print_r($Pstatus);
 	
 	}
-	else{ echo "Tente Novamente!"; }
 }
 
 ?>

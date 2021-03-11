@@ -7,5 +7,5 @@ PeersAdylnet.forEach(function(data, index){
 	dnd = (peer+"dnd");
 	stats = (data.Status);	
 	
-	$('#peers').append("<div class='Ramais'>"+name+"&nbsp"+peer+"&nbsp<img class='info' met='peer' id="+peer+" src='images/info.png'/><br><b class='setor'>"+group+"</b><br><em id="+peer+" class='azul'>"+stats+"</em>&nbsp&nbsp<b class='dndOff' id='"+dnd+"'>dnd</b></div>");	
+	$('#peers').append("<div class='Ramais'>"+name+"&nbsp"+peer+"&nbsp<img class='info' met='peer' name="+peer+" src='images/info.png'/><br><b class='setor'>"+group+"</b><br><em id="+peer+" class='azul'>"+stats+"</em>&nbsp&nbsp<b class='dndOff' id='"+dnd+"'>dnd</b></div>");	
 });

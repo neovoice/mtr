@@ -134,6 +134,7 @@ var dnd = peer+'dnd';
 			$('#'+peer).text('em ligacao');
 			$('#'+peer).removeClass('offline');
 			$('#'+peer).removeClass('azul').addClass('vermelho');
+			//$('#'+peer+"info").removeClass('notinfo');
 			break;
 			} else	
 			//console.log('PEERDIAL2:Default '+peer+': '+exten);
@@ -153,6 +154,7 @@ function peerstatus(peer,stats) {
 			$('#'+peer).text('em ligacao');
 			$('#'+peer).removeClass('offline');
 			$('#'+peer).removeClass('azul').addClass('vermelho');
+			//$('#'+peer+"info").removeClass('notinfo');
 			break;
 
 		case 'UNAVAILABLE':
@@ -161,6 +163,7 @@ function peerstatus(peer,stats) {
 			$('#'+peer).text('desligado');
 			$('#'+peer).removeClass('azul');
 			$('#'+peer).removeClass('vermelho').addClass('offline');
+			//$('#'+peer+"info").addClass('notinfo');
 			break;
 
 		case 'RINGING':
@@ -169,6 +172,7 @@ function peerstatus(peer,stats) {
 			$('#'+peer).text('chamando');
 			$('#'+peer).removeClass('offline');
 			$('#'+peer).removeClass('azul').addClass('vermelho');
+			//$('#'+peer+"info").removeClass('notinfo');
 			break;
 
 		case 'Registered':
@@ -178,6 +182,7 @@ function peerstatus(peer,stats) {
 			$('#'+peer).text('disponivel');
 			$('#'+peer).removeClass('offline');
 			$('#'+peer).removeClass('vermelho').addClass('azul');
+			//$('#'+peer+"info").addClass('notinfo');	
 			break;
 
 		default:

@@ -2,12 +2,12 @@
     {
         "Peer": "1001",
         "DND": "0",
-        "Status": "Registered"
+        "Status": "Unregistered"
     },
     {
         "Peer": "1002",
         "DND": "0",
-        "Status": "7103"
+        "Status": "Registered"
     },
     {
         "Peer": "1003",
@@ -567,7 +567,7 @@
     {
         "Peer": "7103",
         "DND": "0",
-        "Status": "NOT_INUSE"
+        "Status": "Registered"
     },
     {
         "Peer": "7104",

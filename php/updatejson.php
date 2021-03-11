@@ -31,7 +31,6 @@ switch ($evt) {
 		break;
 }
 
-
 function peerupdate($file_peers,$datapeers,$name,$stats) {
 	if (is_array($datapeers)) {
 	foreach ($datapeers as $key => $entry) {

@@ -27,6 +27,8 @@ $socket = fsockopen("127.0.0.1","5038", $errno, $errstr, 10);
 				
 				if (array_key_exists("Event", $new_arr)){
 					$arrjson = json_encode($new_arr);
+					//print_r($arrjson);
+					//echo "\n\n";
 					echo "data: {$arrjson}\n\n";
 					flush();
 				}//if array_key_exist 

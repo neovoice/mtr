@@ -3,7 +3,7 @@ if(typeof(EventSource) !== "undefined") {
 	var rsource = new EventSource("php/refresh.php");
 	rsource.onmessage = function(event){
 		var rdata = JSON.parse(event.data);
-		
+		//console.log(rdata);	
 		if (rdata["evento"] == "peerstatus"){
 			var rpeer = rdata["peer"];
 			var rstatus = rdata["status"];
@@ -27,6 +27,7 @@ if(typeof(EventSource) !== "undefined") {
 					$('#'+rpeer).text('em ligacao');
 					$('#'+rpeer).removeClass('offline');
 					$('#'+rpeer).removeClass('azul').addClass('vermelho');
+					//$('#'+rpeer+"info").removeClass('notinfo');
 					break;
 
 				case 'UNAVAILABLE':
@@ -35,6 +36,7 @@ if(typeof(EventSource) !== "undefined") {
 					$('#'+rpeer).text('desligado');
 					$('#'+rpeer).removeClass('azul');
  			        	$('#'+rpeer).removeClass('vermelho').addClass('offline');
+					//$('#'+rpeer+"info").addClass('notinfo');
 					break;
 				
 				case 'RINGING':
@@ -43,6 +45,7 @@ if(typeof(EventSource) !== "undefined") {
 					$('#'+rpeer).text('chamando');
 					$('#'+rpeer).removeClass('offline');
 					$('#'+rpeer).removeClass('azul').addClass('vermelho');
+					//$('#'+rpeer+"info").removeClass('notinfo');
 					break;			
 				
 				case 'Registered':
@@ -51,6 +54,7 @@ if(typeof(EventSource) !== "undefined") {
 					$('#'+rpeer).text('disponivel');
 					$('#'+rpeer).removeClass('offline');
 					$('#'+rpeer).removeClass('vermelho').addClass('azul'); 
+					//$('#'+rpeer+"info").addClass('notinfo');
 					break;
 	
 				case 'NOT_INUSE':
@@ -64,6 +68,7 @@ if(typeof(EventSource) !== "undefined") {
 						$('#'+rpeer).text('em ligacao');
 						$('#'+rpeer).removeClass('offline');
 						$('#'+rpeer).removeClass('azul').addClass('vermelho');
+						//$('#'+rpeer+"info").removeClass('notinfo'); 		
 						break;	
 					}
 					//console.log('PeerStatus:Default '+rpeer+':'+rstatus);

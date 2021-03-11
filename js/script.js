@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 //Info
 	$(".info").click(function () {
-		var infoname = $(this).attr("id");
+		var infoname = $(this).attr("name");
 		var infotype = $(this).attr("met");
 		//alert(infotype+' '+infoname);
 		

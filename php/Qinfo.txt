@@ -10,9 +10,9 @@ Event: FullyBooted
 
 Privilege: system,all
 
-Uptime: 22484
+Uptime: 23952
 
-LastReload: 22484
+LastReload: 23952
 
 Status: Fully Booted
 
@@ -22,7 +22,7 @@ Event: SuccessfulAuth
 
 Privilege: security,all
 
-EventTV: 2021-03-10T11:13:11.659-0800
+EventTV: 2021-03-11T10:09:14.485-0800
 
 Severity: Informational
 
@@ -32,15 +32,15 @@ EventVersion: 1
 
 AccountID: monitor
 
-SessionID: 0x7ff4a80020e0
+SessionID: 0x7fd92c001290
 
 LocalAddress: IPV4/TCP/0.0.0.0/5038
 
-RemoteAddress: IPV4/TCP/127.0.0.1/36580
+RemoteAddress: IPV4/TCP/127.0.0.1/56222
 
 UsingPassword: 0
 
-SessionTV: 2021-03-10T11:13:11.659-0800
+SessionTV: 2021-03-11T10:09:14.485-0800
 
 
 
@@ -48,14 +48,33 @@ Response: Success
 
 Message: Command output follows
 
-Output: No such queue: GigaCompras.
+Output: N2 has 0 calls (max unlimited) in 'rrmemory' strategy (0s holdtime, 0s talktime), W:0, C:0, A:8, SL:0.0%, SL2:0.0% within 0s
+
+Output:    Members: 
+
+Output:       Andre D (sip/2002) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:       Tayna (sip/2003) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:       Jonatan (sip/2007) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:       Carlos (sip/2004) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:       Bruno C (sip/2008) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:       Laercio (sip/2001) with penalty 1 (ringinuse enabled) (Unavailable) has taken no calls yet
+
+Output:    No Callers
+
+Output: 
+
+Output: 
 
 
 
 Response: Goodbye
 
 Message: Thanks for all the fish.
-
 
 
 
